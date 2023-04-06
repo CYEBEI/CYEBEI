@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table Example</title>
+    <style>
+      /* styles for the banner rows */
+      .banner-row {
+        height: 100px;
+        background-color: lightgray;
+        text-align: center;
+        font-size: 36px;
+      }
+      
+      /* styles for the logo */
+      .logo {
+        height: 80px;
+        margin-top: 10px;
+      }
+      
+      /* styles for the background image */
+      .background-image {
+        height: 100px;
+        background-image: url('background-image.jpg');
+        background-size: cover;
+      }
+      
+      /* styles for the table */
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      table, th, td {
+        border: 1px solid black;
+      }
+      
+      th, td {
+        padding: 10px;
+        text-align: left;
+      }
+      
+      /* styles for the iframe */
+      iframe {
+        width: 100%;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr class="banner-row">
+        <td colspan="2"><img src="coolfox1.jpg"></td>
+      </tr>
+      <!--<tr class="banner">
+        <td colspan="1"><img src="" alt="Logo" class="logo"></td>
+        <td class="background-image"></td>
+      </tr>-->
+      <tr>
+        <td><a href="basic-html-tags.html"target="content">Basic html tags</a></td>
+       <!-- <td rowspan="4"><iframe src="basic-html-tags.html"></iframe></td>-->
+      </tr>
+      <tr>
+        <td><a href="lists.html"target="content">Lists</a></td>
+      </tr>
+      <tr>
+        <td><a href="tables1.html"target="content">Tables</a></td>
+      </tr>
+      <tr>
+        <td><a href="forms.html"target="content">Forms</a></td>
+      </tr>
+      <tr>
+       <!-- <td><a href="basic-html-tags.html"target="content">Basic html tags</a></td>-->
+        <td rowspan="5"><iframe src="basic-html-tags.html"name="content" width="600" height="350"></iframe></td>
+      </tr>
+      <!--<tr>
+        <td><a name="lists">Lists</a></td>
+      </tr>
+      <tr>
+        <td><a name="tables">Tables</a></td>
+      </tr>
+      <tr>
+        <td><a name="forms">Forms</a></td>
+      </tr>-->
+    </table>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+    <style>
+      /* Style for banner and background */
+      .banner {
+        background-color: #f2f2f2;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .banner img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      body {
+        background-image: url('background.jpg');
+        background-size: cover;
+      }
+      /* Style for local navigation */
+      .nav {
+        background-color: #333;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        width: 150px;
+        height: calc(100vh - 50px);
+        position: fixed;
+        top: 50px;
+        left: 0;
+      }
+      .nav a {
+        color: white;
+        text-decoration: none;
+      }
+      .nav a:hover {
+        text-decoration: underline;
+      }
+      /* Style for main content */
+      .content {
+        margin: 50px 0 0 170px;
+        padding: 20px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Banner with logo -->
+    <div class="banner">
+      <img src="logo.png" alt="My Webpage">
+    </div>
+    <!-- Local navigation -->
+    <div class="nav">
+      <a href="#basic-html-tags">Basic HTML Tags</a>
+      <a href="#lists">Lists</a>
+      <a href="#tables">Tables</a>
+      <a href="#forms">Forms</a>
+    </div>
+    <!-- Main content -->
+    <div class="content">
+      <!-- Basic HTML Tags section -->
+      <h2 id="basic-html-tags">Basic HTML Tags</h2>
+      <p>Here's some information about basic HTML tags...</p>
+      <!-- Lists section -->
+      <h2 id="lists">Lists</h2>
+      <p>Here's some information about lists...</p>
+      <!-- Tables section -->
+      <h2 id="tables">Tables</h2>
+      <p>Here's some information about tables...</p>
+      <!-- Forms section -->
+      <h2 id="forms">Forms</h2>
+      <p>Here's some information about forms...</p>
+    </div>
+  </body>
+</html>

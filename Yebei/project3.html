@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+    <style>
+      /* Style for banner and background */
+      .banner {
+        background-color: #f2f2f2;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .banner img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      body {
+        background-image: url('background.jpg');
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+      }
+      /* Style for local navigation */
+      .nav {
+        background-color: #333;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        width: 150px;
+        height: calc(100vh - 50px);
+        position: fixed;
+        top: 50px;
+        left: 0;
+      }
+      .nav a {
+        color: white;
+        text-decoration: none;
+      }
+      .nav a:hover {
+        text-decoration: underline;
+      }
+      /* Style for main content */
+      .content {
+        margin: 50px 0 0 170px;
+        padding: 20px;
+        background-color: white;
+      }
+      /* Style for iframes */
+      iframe {
+        width: 100%;
+        height: calc(100vh - 110px);
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Banner with logo -->
+    <div class="banner">
+      <img src="logo.png" alt="My Webpage">
+    </div>
+    <!-- Local navigation -->
+    <div class="nav">
+      <a href="#basic-html-tags" target="content">Basic HTML Tags</a>
+      <a href="#lists" target="content">Lists</a>
+      <a href="#tables" target="content">Tables</a>
+      <a href="#forms" target="content">Forms</a>
+    </div>
+    <!-- Main content -->
+    <div class="content">
+      <iframe src="" name="content"></iframe>
+    </div>
+  </body>
+</html>
